@@ -549,7 +549,7 @@ pub(crate) const fn blocks(size: u64, block_size: BlockSize) -> u64 {
 /// you to find the position where validation failed.
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
-pub struct TreeNode(u64);
+pub struct TreeNode(pub u64);
 
 impl fmt::Display for TreeNode {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
