@@ -129,7 +129,7 @@ pub(crate) const BLAKE3_CHUNK_SIZE: usize = 1024;
 /// The actual size in bytes can be computed with [BlockSize::bytes].
 #[repr(transparent)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
-pub struct BlockSize(pub(crate) u8);
+pub struct BlockSize(pub u8);
 
 impl fmt::Display for BlockSize {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
